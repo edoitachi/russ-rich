@@ -1,4 +1,4 @@
-## How to deploy this repository to GitHub pages?
+# How to deploy this repository to GitHub pages?
 
 To deploy this repository to GitHub Pages, you need to follow these steps:
 
@@ -105,7 +105,7 @@ After creating and adding rules to your `.gitignore` file, Git will automaticall
 
 `.gitignore` is a powerful tool that helps you keep your Git repository clean and free from unnecessary files. By defining rules in this file, you can avoid adding irrelevant or sensitive data to your version control history. It's a crucial skill to learn as you work on various projects and collaborate with others using Git.
 
-## Creating a GitHub Repository with .gitignore and .gitattributes
+# Creating a GitHub Repository with .gitignore and .gitattributes
 
 ### Step 1: Sign in to GitHub
 
