@@ -59,6 +59,9 @@ body {
     color: var(--text-color);
     transition: 0.3s;
     /* For animation dark mode */
+    padding-top: 20px;
+    margin: 0; 
+    overflow-x: hidden;
 }
 
 h1,
@@ -135,7 +138,7 @@ body.dark-theme {
 /*=============== REUSABLE CSS CLASSES ===============*/
 .container {
     max-width: 968px;
-    margin-left: 1.5rem;
+    /* margin-left: 1.5rem; */
     margin-right: 1.5rem;
 }
 
@@ -233,6 +236,7 @@ hr{
     color: var(--first-color);
     border-bottom : 1px solid var(--first-color);
     transition-duration: 0.5s ;
+    text-decoration: none;
 }
 
 .profile__info {
@@ -257,7 +261,7 @@ hr{
 }
 
 .profile__buttons,
-.profile__buttons-small {
+.profile__buttons_small {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -267,7 +271,7 @@ hr{
     column-gap: 1rem;
 }
 
-.profile__buttons-small {
+.profile__buttons_small {
     column-gap: 0.25rem;
 }
 
@@ -294,16 +298,23 @@ hr{
     margin : 20px auto;
     color: var(--title-color);
     font-size: var(--small-font-size);
+  
 }
 .project__types p{
-    margin : 5px 20px;
-    padding: 10px auto;
+    color: #fff;
+    /* margin : 5px 20px; */
+    border-radius: 30px;
+    padding: 10px;
     text-align: center;
     transition-duration: 0.3s;
+    background-color: var(--first-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .project__types p:hover{
-    border-bottom: 2px solid var(--first-color);
+    
     cursor : pointer;
     transition-duration: 0.3s;
 }
@@ -325,22 +336,24 @@ hr{
     column-gap: 0.5rem;
     background-color: var(--first-color);
     color: #fff;
-    padding: 1.15rem 1.5rem;
+    padding: 0.7rem 1.5rem;
     border-radius: 0.5rem;
     transition: 0.3s;
     box-shadow: 0 8px 24px hsla(var(--hue), var(--sat), var(--lig), 0.25);
 }
 
 .button i {
-    font-size: 1.75rem; 
+    font-size: 1.5rem; 
 }
 
 .button:hover {
     background-color: var(--first-color-alt);
+    color: #fff;
+    text-decoration: none;
 }
 
 .button__small {
-    padding: 0.75rem;
+    padding: 0.50rem 0.8rem;
     box-shadow: none;
 }
 
@@ -523,7 +536,8 @@ hr{
 
 .footerLink:hover{
     color : var(--first-color);
-    transition:0.2s
+    transition:0.2s;
+    text-decoration: none;
 }
 
 /*=============== SCROLL BAR ===============*/
@@ -562,6 +576,14 @@ hr{
     .skills__box {
         column-gap: 1rem;
     }
+    .project__types{
+        grid-template-columns: repeat(3,1fr);
+        gap: 2rem 1rem;
+        font-size: var(--normal-font-size);
+    }
+    .project__types p{
+        margin: 5px;
+     }
 
     
 }
@@ -585,8 +607,11 @@ hr{
     }
     .project__types{
         grid-template-columns: repeat(3,1fr);
-        gap: 2rem 1.5rem;
+        gap: 2rem 1rem;
         font-size: var(--normal-font-size);
+    }
+    .project__types p{
+       margin: 5px;
     }
 }
 
@@ -594,7 +619,9 @@ hr{
 
     .projects__content,
     .skills__content {
-        grid-template-columns: repeat(2, 332px);
+        /* grid-template-columns: repeat(2, 332px); */
+        grid-template-columns: 332px;
+        justify-content: center;
     }
 
     .skills__content {
@@ -612,6 +639,12 @@ hr{
 }
 
 /* For large devices */
+@media screen and (min-width: 1080px) {
+    .projects__content,
+    .skills__content {
+        grid-template-columns: repeat(2, 332px);
+    }
+}
 @media screen and (min-width: 992px) {
     .container {
         margin-left: auto;
@@ -702,4 +735,98 @@ hr{
         text-align: center;
 
     }
+}
+
+
+/* -------------------------------------------------------My style --------------- */
+
+
+#sidebar {
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; /* Change width to cover the whole screen */
+    max-width: 100%; /* Set a maximum width for the sidebar */
+    background-color: #0C151D;
+    padding: 20px;
+    z-index: 999; /* Make sure sidebar overlaps other elements */
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.cross-button{
+    display: block;
+    float: right;
+    padding: 8px 12px;
+    background-color: #171F26;
+    font-size: 24px;
+    font-weight: bolder;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#sidebar.active {
+    transform: translateX(0);
+}
+
+#main_content {
+    padding: 20px;
+    margin-left: 0; /* Remove margin-left to avoid unnecessary spacing */
+}
+
+/* Menu button style - visible on mobile view only */
+.menu-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    display: block;
+    font-size: 24px;
+    font-weight: bolder;
+    position: fixed;
+    top: 12px;
+    right: 12px;
+    z-index: 3;
+}
+
+/* Cross icon style - visible on desktop view only */
+@media (min-width: 768px) {
+    .menu-button {
+        display: none; /* Hide the menu button on desktop view */
+    }
+    #sidebar {
+        transform: translateX(0); /* Show sidebar on desktop */
+        max-width: 350px;
+    }
+    #main_content {
+        margin-left: 350px;
+        padding-left: 50px;
+    }
+    .cross-button{
+        display: none;
+    }
+}
+
+.sidebar_button{
+    display: block;
+    padding: 0.5rem;
+    background: #333;
+    color: #fff;
+    font-size: 1rem;
+    border-radius: 5rem;
+    width: 280px;
+    height: 48px;
+    margin: 16px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sidebar_button:hover{
+    text-decoration: none;
+    background: var(--first-color);
+    color: #fff;
 }

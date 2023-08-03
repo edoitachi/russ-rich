@@ -74,3 +74,11 @@ sr.reveal(`.filters__content`, { delay: 0 });
 sr.reveal(`.filters`, { delay: 0 });
 sr.reveal(`#hr4`)
 sr.reveal(`footer`)
+
+function toggleSidebar() {
+    $('#sidebar').toggleClass('active');
+}
+
+function sideBarBtnClick(){
+    $('#sidebar').toggleClass('active');
+}
