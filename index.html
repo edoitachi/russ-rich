@@ -4,25 +4,21 @@
     <!--=============== META ===============-->
 
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Russell Richards' Portfolio Website"
-    />
+      content="Russell Richards' Portfolio Website" />
     <meta
       name="keywords"
-      content="Russell Richards, Portfolio, Web Developer, Full Stack Developer, Web Design, Web Development, Web Developer Portfolio, Web Developer Portfolio Website, Web Developer Portfolio Website Template, Web Developer Portfolio Website Template Free, Web Developer Portfolio Website Template Free Download, Web Developer Portfolio Website Template Free Download Bootstrap, Web Developer Portfolio Website Template Free Download Html, Web Developer Portfolio Website Template Free Download Html Css, Web Developer Portfolio Website Template Free Download Html Css Bootstrap, Web Developer Portfolio Website Template Free Download Html Css Javascript, Web Developer Portfolio Website Template Free Download Html Css Javascript Bootstrap, Web Developer Portfolio Website Template Free Download Html Css Javascript Jquery, Web Developer Portfolio Website Template Free Download Html Css Javascript Jquery Bootstrap, Web Developer Portfolio Website Template Free Download Html Css Javascript Jquery Bootstrap Php, Web Developer Portfolio Website Template Free Download Html Css Javascript Jquery Bootstrap Php Mysql"
-    />  
-    <meta name="author" content="Russell Richards" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      content="Russell Richards, Portfolio, Web Developer, Full Stack Developer, Web Design, Web Development, Web Developer Portfolio, Web Developer Portfolio Website, Web Developer Portfolio Website Template, Web Developer Portfolio Website Template Free, Web Developer Portfolio Website Template Free Download, Web Developer Portfolio Website Template Free Download Bootstrap, Web Developer Portfolio Website Template Free Download Html, Web Developer Portfolio Website Template Free Download Html Css, Web Developer Portfolio Website Template Free Download Html Css Bootstrap, Web Developer Portfolio Website Template Free Download Html Css Javascript, Web Developer Portfolio Website Template Free Download Html Css Javascript Bootstrap, Web Developer Portfolio Website Template Free Download Html Css Javascript Jquery, Web Developer Portfolio Website Template Free Download Html Css Javascript Jquery Bootstrap, Web Developer Portfolio Website Template Free Download Html Css Javascript Jquery Bootstrap Php, Web Developer Portfolio Website Template Free Download Html Css Javascript Jquery Bootstrap Php Mysql" />
    
-
-
-
     <!-- Bootstrap CSS -->
     <link
       rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-    />
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -31,40 +27,34 @@
     <link
       rel="shortcut icon"
       href="Images/RussLogoSVG.svg"
-      type="image/FAVICON"
-    />
+      type="image/FAVICON" />
 
     <!--=============== REMIX ICONS ===============-->
     <link
       href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
-      rel="stylesheet"
-    />
+      rel="stylesheet" />
 
     <!--=============== CSS ===============-->
     <link rel="stylesheet" href="CSS/styles.css" />
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
     <script
       src="https://kit.fontawesome.com/c18e99365b.js"
-      crossorigin="anonymous"
-    ></script>
+      crossorigin="anonymous"></script>
     <title>Russ' Portfolio</title>
   </head>
   <body>
     <!-- Custom menu button to open the sidebar on mobile view -->
-    <span class="menu-button" onclick="toggleSidebar()"
-      ><i class="fa-solid fa-bars"></i
-    ></span>
+    <span class="menu-button" onclick="toggleSidebar()"><i
+        class="fa-solid fa-bars"></i></span>
 
     <!-- Cross button to close the sidebar on desktop view -->
 
     <div id="sidebar">
-      <span class="cross-button" onclick="toggleSidebar()"
-        ><i class="fa-solid fa-xmark"></i
-      ></span>
+      <span class="cross-button" onclick="toggleSidebar()"><i
+          class="fa-solid fa-xmark"></i></span>
       <div class="h-100 w-100 d-flex justify-content-center align-items-center">
         <div class="text-center">
           <h3 class="text-light mb-5 pb-3">Russell Richards</h3>
@@ -72,50 +62,41 @@
             class="sidebar_button"
             onclick="sideBarBtnClick()"
             href="#nav_profile"
-            role="button"
-            ><i class="fa-solid fa-house-chimney-user mr-1"></i> Profile</a
-          >
+            role="button"><i class="fa-solid fa-house-chimney-user mr-1"></i>
+            Profile</a>
           <a
             class="sidebar_button"
             onclick="sideBarBtnClick()"
             href="#nav_about_me"
-            role="button"
-            ><i class="fa-solid fa-circle-question mr-1"></i> About Me</a
-          >
+            role="button"><i class="fa-solid fa-circle-question mr-1"></i> About
+            Me</a>
           <a
             class="sidebar_button"
             onclick="sideBarBtnClick()"
             href="#nav_experience"
-            role="button"
-            ><i class="fa-solid fa-briefcase mr-1"></i> Work Experience</a
-          >
+            role="button"><i class="fa-solid fa-briefcase mr-1"></i> Work
+            Experience</a>
           <a
             class="sidebar_button"
             onclick="sideBarBtnClick()"
             href="#nav_training"
-            role="button"
-            ><i class="fa-solid fa-certificate mr-1"></i>
-            Trainings/Qualifications</a
-          >
+            role="button"><i class="fa-solid fa-certificate mr-1"></i>
+            Trainings/Qualifications</a>
           <a
             class="sidebar_button"
             onclick="sideBarBtnClick()"
             href="#nav_projects"
-            role="button"
-            ><i class="fa-solid fa-address-book mr-1"></i> Projects</a
-          >
+            role="button"><i class="fa-solid fa-address-book mr-1"></i> Projects</a>
           <a
             class="sidebar_button"
             onclick="sideBarBtnClick()"
             href="#nav_contact"
-            role="button"
-            ><i class="fa-solid fa-id-card mr-1"></i> Contact</a
-          >
+            role="button"><i class="fa-solid fa-id-card mr-1"></i> Contact</a>
         </div>
       </div>
     </div>
 
-    <div id="main_content" >
+    <div id="main_content">
       <section class="profile container" id="nav_profile">
         <!-- Theme button -->
         <i class="ri-moon-line change-theme" id="theme-button"></i>
@@ -129,8 +110,9 @@
               </div>
             </div>
 
-            <div class="profile__description animate__animated animate__fadeInRight">
-              <h2 class="profile__name" >Russell Richards</h2>
+            <div
+              class="profile__description animate__animated animate__fadeInRight">
+              <h2 class="profile__name">Russell Richards</h2>
               <h3 class="profile__profession">
                 An aspiring full stack developer with a deep passion for
                 technology. Coming from an army background, I embrace values
@@ -141,24 +123,22 @@
                 <a
                   href="https://www.instagram.com/"
                   target="_blank"
-                  class="profile__social-link"
-                >
+                  rel="noopener noreferrer"
+                  class="profile__social-link">
                   <i class="ri-instagram-line"></i>
                 </a>
                 <a
                   href="https://www.linkedin.com/in/russ-richards-a86635282"
                   target="_blank"
                   rel="noopener noreferrer"
-                  class="footerLink"
-                >
+                  class="footerLink">
                   <i class="ri-linkedin-box-fill"></i>
                 </a>
                 <a
                   href="https://github.com/Russ-Rich"
                   target="_blank"
                   rel="noopener noreferrer"
-                  class="footerLink"
-                >
+                  class="footerLink">
                   <i class="ri-github-fill"></i>
                 </a>
               </ul>
@@ -168,7 +148,8 @@
           <hr id="hr1" />
           <div class="profile__about" id="nav_about_me">
             <h1 class=" animate__animated animate__fadeInDown">About me:</h1>
-            <div class="profile__introduction animate__animated animate__fadeInLeft">
+            <div
+              class="profile__introduction animate__animated animate__fadeInLeft">
               <p>
                 HOLA! Welcome to my portfolio website! Join me on an exciting
                 journey as I explore my passion for technology and innovation as
@@ -202,7 +183,9 @@
             </div>
 
             <div class="profile__stats" id="nav_training">
-              <h1 id="nav_experience" class=" animate__animated animate__fadeInDown">Russ's Journey is also :</h1>
+              <h1 id="nav_experience"
+                class=" animate__animated animate__fadeInDown">Russ's Journey is
+                also :</h1>
               <div class="profile__info grid ">
                 <div class="profile__info-group">
                   <h3 class="profile__info-number">2</h3>
@@ -220,7 +203,7 @@
             </div>
 
             <hr id="hr2" />
-            <div class="profile__connect" >
+            <div class="profile__connect">
               <p>
                 Through this website, I showcase my projects, skills, and growth
                 in front-end and back-end development. Let's push boundaries,
@@ -228,32 +211,35 @@
                 experiences.
               </p>
               <div class="profile__services">
-                <p><span class="badge bg-secondary p-2 text-light"> all your needs of:</span></p>
+                <p><span class="badge bg-secondary p-2 text-light"> all your
+                    needs of:</span></p>
                 <div class=" project__types">
-                  
-                  <p >User management systems.</p>
-                  <p >E-commerce stores.</p>
+
+                  <p>User management systems.</p>
+                  <p>E-commerce stores.</p>
                   <p>Landing pages.</p>
-                  <p >Booking apps.</p>
-                  <p >Portfolios.</p>
-                  <p >Chat apps.</p>
+                  <p>Booking apps.</p>
+                  <p>Portfolios.</p>
+                  <p>Chat apps.</p>
                 </div>
               </div>
               <div class="profile__services">
-                <p><span class="badge bg-secondary p-2 text-light"> Or for your website:</span></p>
+                <p><span class="badge bg-secondary p-2 text-light"> Or for your
+                    website:</span></p>
                 <div class="project__types">
-                  <p >Features adding or removal.</p>
-                  <p >Performance optimization.</p>
-                  <p >SEO optimization.</p>
-                  <p >Redesigning.</p>
-                  <p >Bug fixing.</p>
+                  <p>Features adding or removal.</p>
+                  <p>Performance optimization.</p>
+                  <p>SEO optimization.</p>
+                  <p>Redesigning.</p>
+                  <p>Bug fixing.</p>
                 </div>
               </div>
 
-              <p id="connectSent" class="animate__animated animate__fadeInDown">Reach me out !</p>
+              <p id="connectSent" class="animate__animated animate__fadeInDown">Reach
+                me out !</p>
               <div class="profile__buttons">
                 <!-- Insert your CV -->
-                <a download href="" class="button animate__animated animate__pulse">
+                <a download href class="button animate__animated animate__pulse">
                   Download CV <i class="ri-download-line"></i>
                 </a>
 
@@ -261,17 +247,18 @@
                   <!-- Insert a real number plus country code -->
                   <a
                     href="https://wa.me/16124437145"
+
                     target="_blank"
-                    class="button button__small button__gray"
-                  >
+                     rel="noopener noreferrer"
+                    class="button button__small button__gray">
                     <i class="ri-whatsapp-line"></i>
                   </a>
                   <!-- Insert your brand name or profile -->
                   <a
                     href="https://m.me/100088091461666"
                     target="_blank"
-                    class="button button__small button__gray"
-                  >
+                    rel="noopener noreferrer"
+                    class="button button__small button__gray">
                     <i class="ri-messenger-line"></i>
                   </a>
                 </div>
@@ -287,11 +274,11 @@
         <ul class="filters__content">
           <button
             class="filters__button filter-tab-active"
-            data-target="#projects"
-          >
+            data-target="#projects">
             Projects
           </button>
-          <button class="filters__button" data-target="#skills" id="nav_projects">Skills</button>
+          <button class="filters__button" data-target="#skills"
+            id="nav_projects">Skills</button>
         </ul>
 
         <div class="filters__sections">
@@ -299,15 +286,13 @@
           <div
             class="projects__content grid filters__active"
             data-content
-            id="projects"
-          >
+            id="projects">
             <article class="projects__card">
               <!-- Insert your image in a rectangular format (Ex: 600 x 400, 1000 x 800, 1200 x 1000, etc) -->
               <img
                 src="Images/dummy.webp"
                 alt
-                class="projects__img"
-              />
+                class="projects__img" />
 
               <div class="projects__modal">
                 <div>
@@ -328,8 +313,7 @@
               <img
                 src="Images/dummy.webp"
                 alt
-                class="projects__img"
-              />
+                class="projects__img" />
 
               <div class="projects__modal">
                 <div>
@@ -350,8 +334,7 @@
               <img
                 src="Images/dummy.webp"
                 alt
-                class="projects__img"
-              />
+                class="projects__img" />
 
               <div class="projects__modal">
                 <div>
@@ -372,8 +355,7 @@
               <img
                 src="Images/dummy.webp"
                 alt
-                class="projects__img"
-              />
+                class="projects__img" />
 
               <div class="projects__modal">
                 <div>
@@ -394,8 +376,7 @@
               <img
                 src="Images/dummy.webp"
                 alt
-                class="projects__img"
-              />
+                class="projects__img" />
 
               <div class="projects__modal">
                 <div>
@@ -415,8 +396,7 @@
               <img
                 src="Images/dummy.webp"
                 alt
-                class="projects__img"
-              />
+                class="projects__img" />
 
               <div class="projects__modal">
                 <div>
@@ -435,7 +415,7 @@
           </div>
 
           <!--=============== SKILLS ===============-->
-          <div class="skills__content grid" data-content id="skills" >
+          <div class="skills__content grid" data-content id="skills">
             <div class="skills__area">
               <h3 class="skills__title">Frontend Developer</h3>
 
@@ -560,36 +540,38 @@
       <hr id="hr4" />
       <footer class="footer container" id="nav_contact">
         <span class="footer__copy"> </span>
-        <p >Find me on</p>
+        <p>Find me on</p>
         <a
-            href="https://www.linkedin.com/in/russ-richards-a86635282"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="footerLink">
-            <i class="ri-linkedin-box-fill"></i>
+          href="https://www.linkedin.com/in/russ-richards-a86635282"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="footerLink">
+          <i class="ri-linkedin-box-fill"></i>
         </a>
         <a
-            href="https://twitter.com/Russ_Rich"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="footerLink">
-            <i class="ri-twitter-fill"></i>
+          href="https://twitter.com/Russ_Rich"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="footerLink">
+          <i class="ri-twitter-fill"></i>
         </a>
         <a
-            href="https://github.com/Russ-Rich"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="footerLink">
-            <i class="ri-github-fill"></i>
+          href="https://github.com/Russ-Rich"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="footerLink">
+          <i class="ri-github-fill"></i>
         </a>
-    </footer>
+      </footer>
     </div>
 
     <!-- Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="JS/scrolleveal.min.js"></script>
     <script src="JS/main.js"></script>
     <script src="JS/script.js"></script>
-</html>
+  </html>
