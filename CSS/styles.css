@@ -288,7 +288,8 @@ hr{
     text-align: center;
 }
 .profile__services{
-    text-align: left;
+    text-align: center;
+    font: 2em sans-serif;
     padding : 20px 15px
 }
 .project__types{
