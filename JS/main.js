@@ -69,16 +69,16 @@ sr.reveal(`#hr2`, { delay: 0 });
 sr.reveal(`.profile__connect`, { delay: 0 });
 sr.reveal(`.profile__info-group`, { interval: 100, delay: 0 });
 sr.reveal(`#hr3`, { delay: 0 });
- sr.reveal(`.profile__buttons`, { delay: 0 });
+sr.reveal(`.profile__buttons`, { delay: 0 });
 sr.reveal(`.filters__content`, { delay: 0 });
 sr.reveal(`.filters`, { delay: 0 });
-sr.reveal(`#hr4`)
-sr.reveal(`footer`)
+sr.reveal(`#hr4`);
+sr.reveal(`footer`);
 
 function toggleSidebar() {
-    $('#sidebar').toggleClass('active');
+	$("#sidebar").toggleClass("active");
 }
 
-function sideBarBtnClick(){
-    $('#sidebar').toggleClass('active');
+function sideBarBtnClick() {
+	$("#sidebar").toggleClass("active");
 }

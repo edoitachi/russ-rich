@@ -1,512 +1,443 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!--=============== META ===============-->
 
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Russell Richards' Portfolio Website" />
+<head>
+  <!--=============== META ===============-->
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Russell Richards' Portfolio Website" />
+  <meta name="keywords"
+    content="Russell Richards, Portfolio, Web Developer, Full Stack Developer, Web Design, Web Development, Web Developer Portfolio, Web Developer Portfolio Website, Web Developer Portfolio Website Template, Web Developer Portfolio Website Template Free, Web Developer Portfolio Website Template Free Download, Web Developer Portfolio Website Template Free Download Bootstrap, Web Developer Portfolio Website Template Free Download Html, Web Developer Portfolio Website Template Free Download Html Css, Web Developer Portfolio Website Template Free Download Html Css Bootstrap, Web Developer Portfolio Website Template Free Download Html Css Javascript, Web Developer Portfolio Website Template Free Download Html Css Javascript Bootstrap, Web Developer Portfolio Website Template Free Download Html Css Javascript Jquery, Web Developer Portfolio Website Template Free Download Html Css Javascript Jquery Bootstrap, Web Developer Portfolio Website Template Free Download Html Css Javascript Jquery Bootstrap Php, Web Developer Portfolio Website Template Free Download Html Css Javascript Jquery Bootstrap Php Mysql" />
 
-    <!-- Bootstrap CSS -->
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
 
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!--=============== FAVICON ===============-->
-    <link
-      rel="shortcut icon"
-      href="Images/RussLogoSVG.svg"
-      type="image/FAVICON" />
+  <!--=============== FAVICON ===============-->
+  <link rel="shortcut icon" href="Images/RussLogoSVG.svg" type="image/FAVICON" />
 
-    <!--=============== REMIX ICONS ===============-->
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
-      rel="stylesheet" />
+  <!--=============== REMIX ICONS ===============-->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
 
-    <!--=============== CSS ===============-->
-    <link rel="stylesheet" href="CSS/styles.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <!--=============== CSS ===============-->
+  <link rel="stylesheet" href="CSS/styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
-    <script
-      src="https://kit.fontawesome.com/c18e99365b.js"
-      crossorigin="anonymous"></script>
-    <title>Russ' Portfolio</title>
-  </head>
-  <body>
-    <!-- Custom menu button to open the sidebar on mobile view -->
-    <span class="menu-button" onclick="toggleSidebar()"><i
-        class="fa-solid fa-bars"></i></span>
+  <script src="https://kit.fontawesome.com/c18e99365b.js" crossorigin="anonymous"></script>
+  <title>Russ' Portfolio</title>
+</head>
 
-    <!-- Cross button to close the sidebar on desktop view -->
+<body>
+  <!-- Custom menu button to open the sidebar on mobile view -->
+  <span class="menu-button" onclick="toggleSidebar()"><i class="fa-solid fa-bars"></i></span>
 
-    <div id="sidebar">
-      <span class="cross-button" onclick="toggleSidebar()"><i
-          class="fa-solid fa-xmark"></i></span>
-      <div class="h-100 w-100 d-flex justify-content-center align-items-center">
-        <div class="text-center">
-          <h3 class="text-light mb-5 pb-3">Russell Richards</h3>
-          <a
-            class="sidebar_button"
-            onclick="sideBarBtnClick()"
-            href="#nav_profile"
-            role="button"><i class="fa-solid fa-house-chimney-user mr-1"></i>
-            Profile</a>
-          <a
-            class="sidebar_button"
-            onclick="sideBarBtnClick()"
-            href="#nav_about_me"
-            role="button"><i class="fa-solid fa-circle-question mr-1"></i> About
-            Me</a>
-          <a
-            class="sidebar_button"
-            onclick="sideBarBtnClick()"
-            href="#nav_experience"
-            role="button"><i class="fa-solid fa-briefcase mr-1"></i> Work
-            Experience</a>
-          <a
-            class="sidebar_button"
-            onclick="sideBarBtnClick()"
-            href="#nav_training"
-            role="button"><i class="fa-solid fa-certificate mr-1"></i>
-            Qualifications</a>
-          <a
-            class="sidebar_button"
-            onclick="sideBarBtnClick()"
-            href="#nav_projects"
-            role="button"><i class="fa-solid fa-address-book mr-1"></i> Projects</a>
-          <a
-            class="sidebar_button"
-            onclick="sideBarBtnClick()"
-            href="#nav_contact"
-            role="button"><i class="fa-solid fa-id-card mr-1"></i> Contact</a>
-        </div>
+  <!-- Cross button to close the sidebar on desktop view -->
+
+  <div id="sidebar">
+    <span class="cross-button" onclick="toggleSidebar()"><i class="fa-solid fa-xmark"></i></span>
+    <div class="h-100 w-100 d-flex justify-content-center align-items-center">
+      <div class="text-center">
+        <h3 class="text-light mb-5 pb-3">Russell Richards</h3>
+        <a class="sidebar_button" onclick="sideBarBtnClick()" href="#nav_profile" role="button"><i
+            class="fa-solid fa-house-chimney-user mr-1"></i>
+          Profile</a>
+        <a class="sidebar_button" onclick="sideBarBtnClick()" href="#nav_about_me" role="button"><i
+            class="fa-solid fa-circle-question mr-1"></i> About
+          Me</a>
+        <a class="sidebar_button" onclick="sideBarBtnClick()" href="#nav_experience" role="button"><i
+            class="fa-solid fa-briefcase mr-1"></i> Work
+          Experience</a>
+        <a class="sidebar_button" onclick="sideBarBtnClick()" href="#nav_projects" role="button"><i
+            class="fa-solid fa-address-book mr-1"></i> Projects</a>
+        <a class="sidebar_button" onclick="sideBarBtnClick()" href="#nav_contact" role="button"><i
+            class="fa-solid fa-id-card mr-1"></i> Contact</a>
+        <a class="sidebar_button" onclick="sideBarBtnClick()" href="https://medium.com" target="_blank" role="button"><i
+            class="fa-solid fa-certificate mr-1"></i>
+          Blogs</a>
       </div>
     </div>
+  </div>
 
-    <div id="main_content">
-      <section class="profile container" id="nav_profile">
-        <!-- Theme button -->
-        <i class="ri-moon-line change-theme" id="theme-button"></i>
+  <div id="main_content">
+    <section class="profile container" id="nav_profile">
+      <!-- Theme button -->
+      <i class="ri-moon-line change-theme" id="theme-button"></i>
 
-        <div class="profile__container grid">
-          <div class="profile__data">
-            <div class="profile__border animate__animated animate__fadeInLeft">
-              <div class="profile__perfil">
-                <!-- Portfolio Image -->
-                <img src="Images/RockyRuss.jpeg" alt="profile image" />
-              </div>
+      <div class="profile__container grid">
+        <div class="profile__data">
+          <div class="profile__border animate__animated animate__fadeInLeft">
+            <div class="profile__perfil">
+              <!-- Portfolio Image -->
+              <img src="Images/RockyRuss.jpeg" alt="profile image" />
             </div>
+          </div>
 
-            <div
-              class="profile__description animate__animated animate__fadeInRight">
-              <h2 class="profile__name">Russell Richards</h2>
-              <h3 class="profile__profession">
-                An aspiring full stack developer with a deep passion for
-                technology. Coming from an army background, I embrace values
-                like discipline, perseverance, and teamwork.
-              </h3>
+          <div class="profile__description animate__animated animate__fadeInRight">
+            <h2 class="profile__name">Russell Richards</h2>
+            <h3 class="profile__profession">
+              An aspiring full stack developer with a deep passion for
+              technology. Coming from an army background, I embrace values
+              like discipline, perseverance, and teamwork.
+            </h3>
 
-              <ul class="profile__social animate__animated animate__fadeInUp">
-                <a
-                  href="https://www.instagram.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="profile__social-link">
-                  <i class="ri-instagram-line"></i>
-                </a>
-                <a
-                  href="https://www.linkedin.com/in/russ-richards-a86635282"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="profile__social-link">
-                  <i class="ri-linkedin-box-fill"></i>
-                </a>
-                <a
-                  href="https://github.com/Russ-Rich"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="profile__social-link">
+            <ul class="profile__social animate__animated animate__fadeInUp">
+              <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"
+                class="profile__social-link">
+                <i class="ri-instagram-line"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/russ-richards-a86635282" target="_blank" rel="noopener noreferrer"
+                class="profile__social-link">
+                <i class="ri-linkedin-box-fill"></i>
+              </a>
+              <a href="https://github.com/Russ-Rich" target="_blank" rel="noopener noreferrer"
+                class="profile__social-link">
                 <i class="ri-github-fill"></i>
+              </a>
+            </ul>
+          </div>
+        </div>
+
+        <hr id="hr1" />
+        <div class="profile__about" id="nav_about_me">
+          <div class="text-center">
+
+            <h2 class="text-start animate__animated animate__fadeInDown">About me</h2>
+          </div>
+          <div class="profile__introduction animate__animated animate__fadeInLeft">
+            <p>
+              Welcome to my portfolio! Join me on an exciting
+              journey as I explore my passion for technology and innovation as
+              a full stack developer. Michigan's stunning landscapes and
+              vibrant community inspire my creativity.
+            </p>
+
+            <p>
+              My journey led me to study at CareerFoundry in Germany, where I
+              gained a diverse skill set in both front-end and back-end
+              technologies.
+            </p>
+
+            <p>
+              As a father, I've learned valuable lessons in patience, empathy,
+              and the beauty of nurturing relationships. With a background in
+              military service, I bring discipline, teamwork, and adaptability
+              to the ever-evolving world of technology.
+            </p>
+
+            <p>
+              I believe in the power of technology to make a positive impact.
+              Let's team up to boost your online presence and achieve success!
+              Beyond coding, I'm inspired by nature's beauty. I love exploring
+              stunning landscapes and living a healthy lifestyle. Together, we
+              can use technology and creativity for good. Let's make the world
+              a better place by finding innovative solutions and leaving a
+              positive mark on society. Are you ready to join me on this
+              exciting journey? Let's make it happen!
+            </p>
+          </div>
+
+          <hr id="hr2" />
+          <div class="container" id="nav_experience">
+            <div class="row">
+              <div class="col-lg-12 col-md-12 text-center">
+                <h2 class="pb-3 animate__animated animate__bounce">Work Experience</h2>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-lg-4 col-md-12 mb-lg-4 mb-md-4 mb-sm-4 mb-xs-4">
+                <div class="experience_card shadow animate__animated animate__fadeInLeft">
+                  <div class="card-body">
+                    <h5>DevSecOps L3 Engineer,</h5>
+                    <h6>UK Home Office</h6>
+                    <span class="badge exp_badge badge-pill text-light px-2 py-2 mb-2">Apr 2021 - june 2022</span>
+                    <p class="mb-0">
+                      Working with the UK Home Office as a Level 3 Security, Logging, Reporting and Troubleshoot
+                      engineer. Part of this role was to monitor the DSAB infrastructure which was based on Kubernetes
+                      Microservice Architecture and Hosted on AWS
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-12 mb-lg-4 mb-md-4 mb-sm-4 mb-xs-4">
+                <div class="experience_card shadow animate__animated animate__fadeInUp">
+                  <div class="card-body">
+                    <h5>DevSecOps L3 Engineer,</h5>
+                    <h6>UK Home Office</h6>
+                    <span class="badge exp_badge badge-pill text-light px-2 py-2 mb-2">Apr 2021 - june 2022</span>
+                    <p class="mb-0">
+                      Working with the UK Home Office as a Level 3 Security, Logging, Reporting and Troubleshoot
+                      engineer. Part of this role was to monitor the DSAB infrastructure which was based on Kubernetes
+                      Microservice Architecture and Hosted on AWS
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-12 mb-lg-4 mb-md-4 mb-sm-4 mb-xs-4">
+                <div class="experience_card shadow animate__animated animate__fadeInRight">
+                  <div class="card-body">
+                    <h5>DevSecOps L3 Engineer,</h5>
+                    <h6>UK Home Office</h6>
+                    <span class="badge exp_badge badge-pill text-light px-2 py-2 mb-2">Apr 2021 - june 2022</span>
+                    <p class="mb-0">
+                      Working with the UK Home Office as a Level 3 Security, Logging, Reporting and Troubleshoot
+                      engineer. Part of this role was to monitor the DSAB infrastructure which was based on Kubernetes
+                      Microservice Architecture and Hosted on AWS
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+          <hr id="hr2" />
+
+          <div class="container" id="nav_experience">
+            <div class="row d-flex justify-content-center">
+              <div class="col-lg-12 col-md-12 text-center">
+                <h2 class="pb-3 animate__animated animate__bounce">Skills</h2>
+              </div>
+              <div class="col-lg-12 col-md-12">
+                <div class="row">
+                  <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+                    <div class="shadow skill_card">
+                      <div class="card-body">
+                        <h5 class="card-title  pb-2 border-bottom"><i class="fa-solid fa-display"></i> Frontend</h5>
+                        <div class="row">
+                          <div class="col-lg-6 col-md-12 col-sm-12 border-bottom">
+                            <p class="mt-3"><span class="text-success">&#x2713;</span> HTML (Advanced)</p>
+                          </div>
+                          <div class="col-lg-6 col-md-12 col-sm-12 border-bottom">
+                            <p class="mt-3"><span class="text-success">&#x2713;</span> CSS (Advanced)</p>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-lg-6 col-md-12 col-sm-12 border-bottom">
+                            <p class="mt-3"><span class="text-success">&#x2713;</span> JavaScript (Basic)</p>
+                          </div>
+                          <div class="col-lg-6 col-md-12 col-sm-12 border-bottom">
+                            <p class="mt-3"><span class="text-success">&#x2713;</span> React (Basic)</p>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-lg-6 col-md-12 col-sm-12 border-bottom">
+                            <p class="mt-3"><span class="text-success">&#x2713;</span> Bootstrap (Basic)</p>
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+                    <div class="shadow skill_card">
+                      <div class="card-body">
+                        <h5 class="card-title pb-2 border-bottom"><i class="fa-solid fa-database"></i> Backend</h5>
+                        <div class="row">
+                          <div class="col-lg-6 col-md-12 col-sm-12 border-bottom">
+                            <p class="mt-3"><span class="text-success">&#x2713;</span> PHP (Basic)</p>
+                          </div>
+                          <div class="col-lg-6 col-md-12 col-sm-12 border-bottom">
+                            <p class="mt-3"><span class="text-success">&#x2713;</span> Firebase (Basic)</p>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-lg-6 col-md-12 col-sm-12 border-bottom">
+                            <p class="mt-3"><span class="text-success">&#x2713;</span> Firebase (Basic)</p>
+                          </div>
+                          <div class="col-lg-6 col-md-12 col-sm-12 border-bottom">
+                            <p class="mt-3"><span class="text-success">&#x2713;</span> Python (Basic)</p>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-lg-6 col-md-12 col-sm-12 border-bottom">
+                            <p class="mt-3"><span class="text-success">&#x2713;</span> Node.js (Basic)</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <hr id="hr2" />
+
+          <div class="profile__stats" id="nav_training">
+            <h2 class="animate__animated animate__fadeInDown">Russ's Journey
+              includes</h2>
+            <div class="profile__info grid ">
+              <div class="profile__info-group">
+                <h3 class="profile__info-number">2</h3>
+                <p class="profile__info-description">Years of work</p>
+              </div>
+              <div class="profile__info-group">
+                <h3 class="profile__info-number">+4</h3>
+                <p class="profile__info-description">Completed projects</p>
+              </div>
+              <div class="profile__info-group">
+                <h3 class="profile__info-number">3</h3>
+                <p class="profile__info-description">Satisfied clients</p>
+              </div>
+            </div>
+          </div>
+
+          <hr id="hr2" />
+
+
+          <section class="filters container text-center">
+            <!--=============== FILTERS TABS ===============-->
+
+            <h2 class="pb-3 animate__animated animate__bounce" id="nav_projects">Projects</h2>
+
+            <div class="filters__sections">
+              <!--=============== PROJECTS ===============-->
+              <div class="projects__content grid filters__active" data-content id="projects">
+                <article class="projects__card">
+                  <!-- Insert your image in a rectangular format (Ex: 600 x 400, 1000 x 800, 1200 x 1000, etc) -->
+                  <img src="Images/dummy.webp" alt class="projects__img" />
+
+                  <div class="projects__modal">
+                    <div>
+                      <h3 class="projects__title">Project 1</h3>
+                      <span class="projects__subtitle">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab,
+                        cupiditate, impedit et ut quia ea accusamus quasi
+                      </span>
+                      <br />
+                      <a href="#" class="projects__button button button__small">
+                        <i class="ri-link"></i>
+                      </a>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="projects__card">
+                  <img src="Images/dummy.webp" alt class="projects__img" />
+
+                  <div class="projects__modal">
+                    <div>
+                      <h3 class="projects__title">Project 2</h3>
+                      <span class="projects__subtitle">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab,
+                        cupiditate, impedit et ut quia ea accusamus quasi
+                      </span>
+                      <br />
+                      <a href="#" class="projects__button button button__small">
+                        <i class="ri-link"></i>
+                      </a>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="projects__card">
+                  <img src="Images/dummy.webp" alt class="projects__img" />
+
+                  <div class="projects__modal">
+                    <div>
+                      <h3 class="projects__title">Project 3</h3>
+                      <span class="projects__subtitle">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab,
+                        cupiditate, impedit et ut quia ea accusamus quasi
+                      </span>
+                      <br />
+
+                      <i class="ri-link"></i>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="projects__card">
+                  <img src="Images/dummy.webp" alt class="projects__img" />
+
+                  <div class="projects__modal">
+                    <div>
+                      <h3 class="projects__title">Project 4</h3>
+                      <span class="projects__subtitle">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab,
+                        cupiditate, impedit et ut quia ea accusamus quasi
+                      </span>
+                      <br />
+                      <a href="#" class="projects__button button button__small">
+                        <i class="ri-link"></i>
+                      </a>
+                    </div>
+                  </div>
+                </article>
+
+                </article>
+              </div>
+
+            </div>
+          </section>
+          <hr id="hr4" />
+
+          <div class="profile__connect">
+            <p>
+              Through this website, I showcase my projects, skills, and growth
+              in front-end and back-end development. Let's push boundaries,
+              create innovative applications, and deliver seamless user
+              experiences.
+            </p>
+            <div class="profile__services">
+              <h2>Stuff I Can Do</h2>
+              <div class=" project__types">
+
+                <p>Websites.</p>
+                <p>E-commerce stores.</p>
+                <p>Bug fixing.</p>
+                <p>Booking apps.</p>
+                <p>Portfolios.</p>
+                <p>SEO optimization.</p>
+              </div>
+            </div>
+            <div class="profile__services">
+
+            </div>
+
+            <h2 id="connectSent" class="animate__animated animate__fadeInDown">Reach
+              out to me !</h2>
+            <div class="profile__buttons">
+              <!-- Insert your CV -->
+              <a download href class="button animate__animated animate__pulse">
+                Download CV <i class="ri-download-line"></i>
+              </a>
+
+              <div class="profile__buttons_small">
+                <!-- Insert a real number plus country code -->
+                <a href="https://wa.me/16124437145" target="_blank" rel="noopener noreferrer"
+                  class="button button__small button__gray">
+                  <i class="ri-whatsapp-line"></i>
                 </a>
-              </ul>
-            </div>
-          </div>
-
-          <hr id="hr1" />
-          <div class="profile__about" id="nav_about_me">
-            <h1 class=" animate__animated animate__fadeInDown">About me:</h1>
-            <div
-              class="profile__introduction animate__animated animate__fadeInLeft">
-              <p>
-                Welcome to my portfolio! Join me on an exciting
-                journey as I explore my passion for technology and innovation as
-                a full stack developer. Michigan's stunning landscapes and
-                vibrant community inspire my creativity.
-              </p>
-
-              <p>
-                My journey led me to study at CareerFoundry in Germany, where I
-                gained a diverse skill set in both front-end and back-end
-                technologies.
-              </p>
-
-              <p>
-                As a father, I've learned valuable lessons in patience, empathy,
-                and the beauty of nurturing relationships. With a background in
-                military service, I bring discipline, teamwork, and adaptability
-                to the ever-evolving world of technology.
-              </p>
-
-              <p>
-                I believe in the power of technology to make a positive impact.
-                Let's team up to boost your online presence and achieve success!
-                Beyond coding, I'm inspired by nature's beauty. I love exploring
-                stunning landscapes and living a healthy lifestyle. Together, we
-                can use technology and creativity for good. Let's make the world
-                a better place by finding innovative solutions and leaving a
-                positive mark on society. Are you ready to join me on this
-                exciting journey? Let's make it happen!
-              </p>
-            </div>
-
-            <div class="profile__stats" id="nav_training">
-              <h1 id="nav_experience"
-                class=" animate__animated animate__fadeInDown">Russ's Journey
-                includes</h1>
-              <div class="profile__info grid ">
-                <div class="profile__info-group">
-                  <h3 class="profile__info-number">2</h3>
-                  <p class="profile__info-description">Years of work</p>
-                </div>
-                <div class="profile__info-group">
-                  <h3 class="profile__info-number">+4</h3>
-                  <p class="profile__info-description">Completed projects</p>
-                </div>
-                <div class="profile__info-group">
-                  <h3 class="profile__info-number">3</h3>
-                  <p class="profile__info-description">Satisfied clients</p>
-                </div>
-              </div>
-            </div>
-
-            <hr id="hr2" />
-            <div class="profile__connect">
-              <p>
-                Through this website, I showcase my projects, skills, and growth
-                in front-end and back-end development. Let's push boundaries,
-                create innovative applications, and deliver seamless user
-                experiences.
-              </p>
-              <div class="profile__services">
-                <p><span class="badge bg-secondary p-2 text-light"> Stuff I Can Do</span></p>
-                <div class=" project__types">
-
-                  <p>Websites.</p>
-                  <p>E-commerce stores.</p>
-                  <p>Bug fixing.</p>
-                  <p>Booking apps.</p>
-                  <p>Portfolios.</p>
-                  <p>SEO optimization.</p>
-                </div>
-              </div>
-              <div class="profile__services">
-
-              </div>
-
-              <p id="connectSent" class="animate__animated animate__fadeInDown">Reach
-                out to me !</p>
-              <div class="profile__buttons">
-                <!-- Insert your CV -->
-                <a download href class="button animate__animated animate__pulse">
-                  Download CV <i class="ri-download-line"></i>
+                <!-- Insert your brand name or profile -->
+                <a href="https://m.me/100088091461666" target="_blank" rel="noopener noreferrer"
+                  class="button button__small button__gray">
+                  <i class="ri-messenger-line"></i>
                 </a>
-
-                <div class="profile__buttons_small">
-                  <!-- Insert a real number plus country code -->
-                  <a
-                    href="https://wa.me/16124437145"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="button button__small button__gray">
-                    <i class="ri-whatsapp-line"></i>
-                  </a>
-                  <!-- Insert your brand name or profile -->
-                  <a
-                    href="https://m.me/100088091461666"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="button button__small button__gray">
-                    <i class="ri-messenger-line"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <hr id="hr3" />
-        </div>
-      </section>
-
-      <section class="filters container">
-        <!--=============== FILTERS TABS ===============-->
-        <ul class="filters__content">
-          <button
-            class="filters__button filter-tab-active"
-            data-target="#projects">
-            Projects
-          </button>
-          <button class="filters__button" data-target="#skills"
-            id="nav_projects">Skills</button>
-        </ul>
-
-        <div class="filters__sections">
-          <!--=============== PROJECTS ===============-->
-          <div
-            class="projects__content grid filters__active"
-            data-content
-            id="projects">
-            <article class="projects__card">
-              <!-- Insert your image in a rectangular format (Ex: 600 x 400, 1000 x 800, 1200 x 1000, etc) -->
-              <img
-                src="Images/dummy.webp"
-                alt
-                class="projects__img" />
-
-              <div class="projects__modal">
-                <div>
-                  <h3 class="projects__title">Project 1</h3>
-                  <span class="projects__subtitle">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab,
-                    cupiditate, impedit et ut quia ea accusamus quasi
-                  </span>
-                  <br />
-                  <a href="#" class="projects__button button button__small">
-                    <i class="ri-link"></i>
-                  </a>
-                </div>
-              </div>
-            </article>
-
-            <article class="projects__card">
-              <img
-                src="Images/dummy.webp"
-                alt
-                class="projects__img" />
-
-              <div class="projects__modal">
-                <div>
-                  <h3 class="projects__title">Project 2</h3>
-                  <span class="projects__subtitle">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab,
-                    cupiditate, impedit et ut quia ea accusamus quasi
-                  </span>
-                  <br />
-                  <a href="#" class="projects__button button button__small">
-                    <i class="ri-link"></i>
-                  </a>
-                </div>
-              </div>
-            </article>
-
-            <article class="projects__card">
-              <img
-                src="Images/dummy.webp"
-                alt
-                class="projects__img" />
-
-              <div class="projects__modal">
-                <div>
-                  <h3 class="projects__title">Project 3</h3>
-                  <span class="projects__subtitle">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab,
-                    cupiditate, impedit et ut quia ea accusamus quasi
-                  </span>
-                  <br />
-
-                  <i class="ri-link"></i>
-                </div>
-              </div>
-            </article>
-
-            <article class="projects__card">
-              <img
-                src="Images/dummy.webp"
-                alt
-                class="projects__img" />
-
-              <div class="projects__modal">
-                <div>
-                  <h3 class="projects__title">Project 4</h3>
-                  <span class="projects__subtitle">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab,
-                    cupiditate, impedit et ut quia ea accusamus quasi
-                  </span>
-                  <br />
-                  <a href="#" class="projects__button button button__small">
-                    <i class="ri-link"></i>
-                  </a>
-                </div>
-              </div>
-            </article>
-
-          </article>
-        </div>
-
-        <!--=============== SKILLS ===============-->
-        <div class="skills__content grid" data-content id="skills">
-          <div class="skills__area">
-            <h3 class="skills__title">Frontend Developer</h3>
-
-            <div class="skills__box">
-              <div class="skills__group">
-                <div class="skills__data">
-                  <i class="ri-checkbox-circle-line"></i>
-
-                  <div>
-                    <h3 class="skills__name">HTML</h3>
-                    <span class="skills__level">Advanced</span>
-                  </div>
-                </div>
-
-                <div class="skills__data">
-                  <i class="ri-checkbox-circle-line"></i>
-
-                  <div>
-                    <h3 class="skills__name">CSS</h3>
-                    <span class="skills__level">Advanced</span>
-                  </div>
-                </div>
-
-                <div class="skills__data">
-                  <i class="ri-checkbox-circle-line"></i>
-
-                  <div>
-                    <h3 class="skills__name">JavaScript</h3>
-                    <span class="skills__level">Intermediate</span>
-                  </div>
-                </div>
-              </div>
-
-              <div class="skills__group">
-                <div class="skills__data">
-                  <i class="ri-checkbox-circle-line"></i>
-
-                  <div>
-                    <h3 class="skills__name">React</h3>
-                    <span class="skills__level">Basic</span>
-                  </div>
-                </div>
-
-                <div class="skills__data">
-                  <i class="ri-checkbox-circle-line"></i>
-
-                  <div>
-                    <h3 class="skills__name">Bootstrap</h3>
-                    <span class="skills__level">Basic</span>
-                  </div>
-                </div>
-
-                <div class="skills__data">
-                  <i class="ri-checkbox-circle-line"></i>
-
-                  <div>
-                    <h3 class="skills__name">Git</h3>
-                    <span class="skills__level">Advanced</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="skills__area">
-            <h3 class="skills__title">Backend Developer</h3>
-
-            <div class="skills__box">
-              <div class="skills__group">
-                <div class="skills__data">
-                  <i class="ri-checkbox-circle-line"></i>
-
-                  <div>
-                    <h3 class="skills__name">PHP</h3>
-                    <span class="skills__level">Basic</span>
-                  </div>
-                </div>
-
-                <div class="skills__data">
-                  <i class="ri-checkbox-circle-line"></i>
-
-                  <div>
-                    <h3 class="skills__name">MySQL</h3>
-                    <span class="skills__level">Basic</span>
-                  </div>
-                </div>
-
-                <div class="skills__data">
-                  <i class="ri-checkbox-circle-line"></i>
-
-                  <div>
-                    <h3 class="skills__name">Firebase</h3>
-                    <span class="skills__level">Basic</span>
-                  </div>
-                </div>
-              </div>
-
-              <div class="skills__group">
-                <div class="skills__data">
-                  <i class="ri-checkbox-circle-line"></i>
-
-                  <div>
-                    <h3 class="skills__name">Python</h3>
-                    <span class="skills__level">Basic</span>
-                  </div>
-                </div>
-
-                <div class="skills__data">
-                  <i class="ri-checkbox-circle-line"></i>
-
-                  <div>
-                    <h3 class="skills__name">Node Js</h3>
-                    <span class="skills__level">Basic</span>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
         </div>
+        <hr id="hr3" />
       </div>
     </section>
-    <hr id="hr4" />
-    <footer class="footer container" id="nav_contact">
+
+    <footer class="footer container text-center" id="nav_contact">
       <span class="footer__copy"> </span>
-      <p>Find me on</p>
-      <a
-        href="https://www.linkedin.com/in/russ-richards-a86635282"
-        target="_blank"
-        rel="noopener noreferrer"
+      <p class="text-center">Find me on</p>
+      <a href="https://www.linkedin.com/in/russ-richards-a86635282" target="_blank" rel="noopener noreferrer"
         class="footerLink">
         <i class="ri-linkedin-box-fill"></i>
       </a>
-      <a
-        href="https://twitter.com/Russ_Rich"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="footerLink">
+      <a href="https://twitter.com/Russ_Rich" target="_blank" rel="noopener noreferrer" class="footerLink">
         <i class="ri-twitter-fill"></i>
       </a>
-      <a
-        href="https://github.com/Russ-Rich"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="footerLink">
+      <a href="https://github.com/Russ-Rich" target="_blank" rel="noopener noreferrer" class="footerLink">
         <i class="ri-github-fill"></i>
       </a>
     </footer>
@@ -514,11 +445,10 @@
 
   <!-- Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script
-    src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
-  <script
-    src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <script src="JS/scrolleveal.min.js"></script>
   <script src="JS/main.js"></script>
   <script src="JS/script.js"></script>
+
 </html>
