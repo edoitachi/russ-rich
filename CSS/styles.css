@@ -456,15 +456,17 @@ hr {
 .projects__subtitle,
 .projects__title {
     color: #fff;
-}
+    font-size: larger;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+    }
 
-.projects__subtitle {
-    font-size: var(--smaller-font-size);
-}
 
 .projects__title {
     font-size: var(--h3-font-size);
     margin-bottom: 0.75rem;
+    text-align: center;
 }
 
 .projects__button {
