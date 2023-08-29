@@ -670,8 +670,16 @@ footer {
 	}
 }
 
-/* For large devices */
+/* Fix specific screensize image issue */
 @media screen and (min-width: 1080px) {
+	.projects__content,
+	.skills__content {
+		grid-template-columns: repeat(2, 320px);
+	}
+}
+
+/* For large devices */
+@media screen and (min-width: 1250px) {
 	.projects__content,
 	.skills__content {
 		grid-template-columns: repeat(2, 450px);
@@ -873,7 +881,11 @@ header {
 	background: transparent;
 	outline: none;
 }
-
+@media (min-width: 1050) and (max-width: 1400) {
+	.profile__container {
+		max-width: 90px !important;
+	}
+}
 .sidebar_button {
 	display: block;
 	padding: 0.5rem;
